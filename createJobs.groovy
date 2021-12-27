@@ -6,3 +6,17 @@ pipelineJob('pipelineJob') {
         }
     }
 }
+pipelineJob('spring-petclinic') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/broadcastninja/spring-petclinic'
+                    }
+                    branch 'main'
+                }
+            }
+        }
+    }
+}

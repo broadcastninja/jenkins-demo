@@ -32,7 +32,7 @@ pipelineJob('pring-petclinic-job-docker') {
                         url 'https://github.com/broadcastninja/spring-petclinic.git'
                     }
                     branch 'main'
-                    scriptPath('Jenkinsfile-docker')
+                    scriptPath('Jenkinsfile')
                 }
             }
         }
